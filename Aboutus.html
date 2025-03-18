@@ -1,0 +1,504 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>aboutus</title>
+	<style>
+		/*-------------------Top BUTTONs CSS part-----------------*/
+.Tbutton {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: #FE5C00;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  font-weight: bold
+}
+
+.Tbutton:hover {
+  letter-spacing: 3px;
+  background-color: #FE5C00;
+  color: black;
+  box-shadow: #FE5C00 0px 7px 29px 0px;
+}
+
+.Tbutton:active {
+  letter-spacing: 3px;
+  background-color: #FE5C00;
+  color: black;
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+		/*-------TERMS AND CONDITIONS TABLE CSS PART-------*/
+		.Termstable{
+			border-spacing: 20px;
+			background-color: rgba(255, 255, 255, 0.9);
+			box-shadow: 0 6px 80px rgba(0, 3, 0, 0.6);
+			border-radius: 20px;
+		}
+		li{
+			list-style-type: circle;
+			line-height: 30px;
+		}
+		h2{
+			font-size: 20px;
+		}
+		
+		/*--------------SOCIAL MEDIA BUTTONS CSS PART------------------*/
+	/*--------This is a FACEBOOK BUTTON css part--------------*/
+.facebook-button {
+  position: relative;
+  width: 130px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px #3a5ba2 solid;
+  overflow: hidden;
+}
+
+.facebook-text1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 22%;
+}
+
+.facebook-text2 {
+  position: absolute;
+  top: 25%;
+  left: -50px;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+.facebook-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+}
+
+.facebook-icon::before {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  z-index: -1;
+  content: '';
+  width: 130px;
+  height: 33px;
+  border-radius: 30px;
+  background-color: #3a5ba2;
+}
+
+.facebook-button:hover .facebook-icon {
+  transform: translateX(96px);
+  transition: transform 0.5s;
+}
+
+.facebook-button:hover .facebook-text2 {
+  transform: translateX(100px);
+  transition: transform 0.6s;
+}
+
+.facebook-button:active {
+  transform: scale(1.03);
+}
+	
+	/*------------This is a instagram CSS part-------------*/
+	.insta-button {
+  position: relative;
+  width: 130px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px #FFB700 solid;
+  overflow: hidden;
+}
+
+.insta-text1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 22%;
+}
+
+.insta-text2 {
+  position: absolute;
+  top: 25%;
+  left: -50px;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+.insta-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+}
+
+.insta-icon::before {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  z-index: -1;
+  content: '';
+  width: 130px;
+  height: 33px;
+  border-radius: 30px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  ;
+}
+
+.insta-icon:before {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  z-index: -1;
+  content: '';
+  width: 130px;
+  height: 33px;
+  border-radius: 30px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  ;
+}
+
+.insta-button:hover .insta-icon {
+  transform: translateX(96px);
+  transition: transform 0.5s;
+}
+
+.insta-button:hover .insta-text2 {
+  transform: translateX(100px);
+  transition: transform 0.6s;
+}
+
+.insta-button:active {
+  transform: scale(1.03);
+}
+	
+/*-------------------END---------------------------*/
+	
+	/*----------------FOOTER LOGIN / REGISTER BUTTON CSS part----------*/
+	.lr-button {
+  padding: 17px 40px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #FE5C00;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  font-family:verdana;
+  font-weight: bold
+  
+}
+
+.lr-button:hover {
+  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+}
+
+.lr-button:active {
+  background-color: rgb(255, 56, 86);
+  /*50, 168, 80*/
+  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+}
+	
+	/*------------FOOTER BUTTONS CSS part-----------*/
+	
+	.footer-button {
+  font-size: 12px;
+  color: #e1e1e1;
+  font-family: verdana;
+  font-weight: ;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.fotter-button:focus,
+.footer-button:hover {
+  color: #fff;
+}
+
+.footer-button:focus:after,
+.footer-button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.footer-button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+/*---------------END-------------------------------------*/
+		
+		/*----------------CART BUTTON CSS PART----------------*/
+	.btn-cart {
+  /*display: flex;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+
+.btn-cart::after {
+  content: attr(data-quantity);
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  font-family: verdana;
+  font-weight: bold;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s linear;
+  top: 115%;
+}
+
+.icon-cart {
+  width: 24.38px;
+  height: 30.52px;
+  transition: .2s linear;
+}
+
+.icon-cart path {
+  fill: rgb(254, 92, 0);
+  transition: .2s linear;
+}
+
+.btn-cart:hover > .icon-cart {
+  transform: scale(1.2);
+}
+
+.btn-cart:hover > .icon-cart path {
+  fill: rgb(254, 92, 0);
+}
+
+.btn-cart:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: 105%;
+}
+
+.quantity {
+  display: none;
+}
+
+		
+		body{
+			background-image: url("images/grungy-white-background-natural-cement-stone-old-texture-as-retro-pattern-wall.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+		
+.play-button {
+  --😀: #FE5C00;
+  --😀😀: black;
+  cursor: pointer;
+  width: 184px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  background: var(--😀);
+  border: 2px solid var(--😀😀);
+  border-radius: .75rem;
+  box-shadow: 0 8px 0 var(--😀😀);
+  transform: skew(-10deg);
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px var(--😀😀😀));
+}
+
+.play-button:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 var(--😀😀😀);
+}
+	  
+	  
+	  
+	  body{
+		  padding: 0;
+		  margin: 0;
+	  }
+</style>
+	
+	
+	
+</head>
+
+<body>
+	<script>
+    const audio = document.getElementById('myAudio');
+
+    function playAudio() {
+      audio.play();
+    }
+
+    function pauseAudio() {
+      audio.pause();
+    }
+  </script>
+	
+	
+	<!--------------------------------------TOP NAVIGATION BUTTONS--------------------------------------------------------->
+	
+	<div style="overflow-x: auto;">
+        <table border="0" width="100%" height="100px" bgcolor="black" style="text-align: center;">
+            <colgroup>
+                <col style="width: 20%;">
+                <col style="width: 20%;">
+                <col style="width: 20%;">
+                <col style="width: 20%;">
+                <col style="width: 20%;">
+            </colgroup>
+            <tr>
+                <td><img style="margin-right: 89px" alt="logo" src="images/main logo.png" width="120" height="80"></td>
+                <td><button class="footer-button" style="margin-right: 70px"><b><font size="3px">PROMOS</font></b></button></td>
+                <td><button class="footer-button" style="margin-right: 110px"><b><font size="3px">PIZZA</font></b></button></td>
+                <td><button class="footer-button"><b><font size="3px">APPETISERS AND OTHERS</font></b></button></td>
+                <td style="margin-right: 90px">
+					<button data-quantity="0" class="btn-cart">
+					  <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
+						<title>icon-cart</title>
+						<path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+					  </svg>
+					  <span class="quantity"></span>
+        			</button>
+				</td>
+            </tr>
+        </table>
+    </div>
+	<br><br>
+	<!------------------------------------TERMS & CONDITIONS PART-------------------------------------------------->
+	<center>
+	<table style="font-family: verdana;" border="0px" bgcolor="#FFFFFF" width="1000" class="Termstable">
+		<tr>
+			<th><h1 style="text-decoration: underline; font-size: 30px">ABOUT US
+			</h1></th>
+			<td>
+				<audio id="myAudio" src="images/about us voice.mp3"></audio>
+  				<button class="play-button" onclick="document.getElementById('myAudio').play()">Play AU &#128513;</button>
+  				<button class="play-button" onclick="document.getElementById('myAudio').pause()">Pause</button>
+			</td>
+		</tr>
+			<td><h2 style="text-align: center; font-size: 20px; line-height: 29px">
+			Welcome to Pizza Buddies!</h2>
+
+<p>At Pizza Buddies, we believe that great moments are made even better with a slice of delicious pizza. Our journey began with a passion for crafting mouthwatering pizzas that bring people together, whether it's a casual family dinner, a lively gathering with friends, or a cozy night in.
+<br><br>
+What sets us apart at Pizza Buddies is our commitment to quality ingredients and authentic flavors. We source the freshest local produce and finest cheeses to create pizzas that are as wholesome as they are tasty. From classic Margheritas to adventurous combinations that push the boundaries of traditional toppings, every bite tells a story of passion and craftsmanship.
+<br><br>
+But Pizza Buddies is more than just a pizza place; it's a place where friendships are forged over shared love for good food. Our cozy ambiance welcomes you to relax, unwind, and enjoy the simple pleasure of great pizza in the heart of Sri Lanka.
+<br><br>
+We invite you to join our pizza family and become one of our Pizza Buddies. Whether you're a cheese lover, a meat enthusiast, or a veggie aficionado, there's a perfect pizza waiting for you here. Come on in, grab a slice, and let's make delicious memories together at Pizza Buddies!
+<br><br></p>
+<h2>Pizza Buddies: Where Every Slice Tells a Story</h2>
+			</td>
+		
+	</table>
+	</center>
+	<br><br>
+	<!-------------------------------------FOOTER PART-------------------------------------------->
+  <table width="100%" border="0px" bgcolor="#181715" style="padding: 40px; line-height: 1.5" >
+		<tbody>
+			<tr>
+				<td width="442" height="81" style="text-align: left"> <img src="images/main logo.png" width="142" height="77" alt=""/></td>
+			</tr>
+			<tr>
+				<td style="text-align: left; font-family: verdana; font-size: 20.8px;" >
+				<p style="font-weight: bold; color: white">Order Now</p>
+				<button class="footer-button">Promos</button><br>
+				<button class="footer-button">Pizzas</button><br>
+				<button class="footer-button">Appertizers</button><br>
+				<button class="footer-button">Beverages</button>
+			  </td>
+			  <td width="513" style="text-align: left; font-family: verdana; font-size: 20.8px"> 
+				  
+					<p style="font-weight: bold; color: white">Policy</p>
+					<a href="terms_condition.html"><button class="footer-button">Terms and Conditions</button></a><br>
+					<a href="privacy.html"><button class="footer-button">Privacy policy</button></a><br>
+				    <a href="feedback.html"><button class="footer-button">Feedback</button></a><br><br>				
+				  <table border="0" width="513px">
+						<tr>
+							<td style="font-family: verdana; font-weight: bold; font-size: 13.8px; text-align: left; color: white">FOLLOW US ON<br><br>
+							
+								<!----------Social media buttons----------->
+							  <!--Facebook button-->
+							   <button class="facebook-button"> 
+  <span class="facebook-icon"><svg xmlns="http://www.w3.org/2000/svg" width="33" viewBox="0 0 512 512" height="33"><g fill-rule="evenodd" clip-rule="evenodd"><path fill="#3a5ba2" d="m256.23 512c140.58 0 255.77-115.19 255.77-255.77 0-141.046-115.19-256.23-255.77-256.23-141.046 0-256.23 115.184-256.23 256.23 0 140.58 115.184 255.77 256.23 255.77z"></path><path fill="#fff" d="m224.023 160.085c0-35.372 28.575-63.946 63.938-63.946h48.072v63.946h-32.199c-8.608 0-15.873 7.257-15.873 15.873v32.192h48.072v63.938h-48.072v144.22h-63.938v-144.22h-48.065v-63.938h48.065z"></path></g></svg></span>
+  <span class="facebook-text1">Facebook</span>
+  <span class="facebook-text2">Click</span> 
+</button>
+							  <!--Instagram button-->
+							  <button class="insta-button"> 
+  <span class="insta-icon"><svg height="33" viewBox="0 0 128 128" width="33" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><lineargradient id="a" gradientTransform="matrix(1 0 0 -1 594 633)" gradientUnits="userSpaceOnUse" x1="-566.711" x2="-493.288" y1="516.569" y2="621.43"><stop offset="0" stop-color="#ffb900"></stop><stop offset="1" stop-color="#9100eb"></stop></lineargradient><circle cx="64" cy="64" fill="url(#a)" r="64"></circle><g fill="#fff"><path d="m82.333 104h-36.666c-11.947 0-21.667-9.719-21.667-21.667v-36.666c0-11.948 9.72-21.667 21.667-21.667h36.666c11.948 0 21.667 9.719 21.667 21.667v36.667c0 11.947-9.719 21.666-21.667 21.666zm-36.666-73.333c-8.271 0-15 6.729-15 15v36.667c0 8.271 6.729 15 15 15h36.666c8.271 0 15-6.729 15-15v-36.667c0-8.271-6.729-15-15-15z"></path><path d="m64 84c-11.028 0-20-8.973-20-20 0-11.029 8.972-20 20-20s20 8.971 20 20c0 11.027-8.972 20-20 20zm0-33.333c-7.352 0-13.333 5.981-13.333 13.333 0 7.353 5.981 13.333 13.333 13.333s13.333-5.98 13.333-13.333c0-7.352-5.98-13.333-13.333-13.333z"></path><circle cx="85.25" cy="42.75" r="4.583"></circle></g></svg></span>
+  <span class="insta-text1">Instagram</span>
+  <span class="insta-text2">Click</span> 
+</button>
+							  
+							  <!-----------------------END Social media buttons part--------------->
+								
+							</td>
+						</tr>
+						
+				</table>
+			  </td>
+			  <td width="223" style="text-align: left; font-family: verdana; font-size: 20.8px">
+				  <a href="login.html"><button class="lr-button">LOGIN/REGISTER</button></a><br><br>
+			      <p style="font-weight: bold; color: white">About</p>
+				  <button class="footer-button">About us</button><br>
+				  <a href="hotline.html"><button class="footer-button">Hotline</button></a>
+				  
+					
+				</td>
+		  </tr>
+			<tr>
+				<td style="text-align: left"></td>
+				
+				<td>
+					
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+<!-------------------------------------------END FOOTER PART------------------------------------->
+	
+</body>
+</html>
